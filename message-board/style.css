@@ -1,0 +1,249 @@
+* {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #c78283;
+  color: #fff;
+  font-weight: 300;
+  text-align: center;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 2;
+  box-shadow: 3px 3px 5px #29252577;
+}
+
+main {
+  margin-top: 60px;
+}
+
+.wrapper {
+  max-width: 600px;
+  padding: 20px 20px;
+}
+
+main > .wrapper {
+  background-color: #e9ede9;
+}
+
+textarea {
+  width: 90%;
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #819c8d;
+}
+
+h4.error {
+  color: #c75d5e;
+  margin-bottom: 10px;
+}
+
+.sendMessage,
+.messageList {
+  margin: 20px;
+}
+
+.inputBtn {
+  text-decoration: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  background-color: #608068;
+  color: #fff;
+  border: none;
+  box-shadow: 3px 3px 5px #242d2431;
+  opacity: 0.6;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.inputBtn:hover {
+  opacity: 1;
+}
+
+.horizonLine {
+  margin: 0 20px;
+  width: 85%;
+  height: 2px;
+  background-color: #608068;
+}
+
+.messageItem {
+  border-bottom: 1px solid #819c8d;
+  margin-top: 10px;
+  display: flex;
+}
+
+.userAvatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #bcc8bc;
+  margin-right: 10px;
+}
+
+.messageBody {
+  flex: 1;
+  margin-bottom: 10px;
+}
+
+.userInfo {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 20px;
+}
+
+.username {
+  color: #608068;
+  font-weight: bold;
+  /* 處理過長的 username */
+  max-width: 40%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.timeStamp {
+  color: #888888;
+}
+
+.messageContent {
+  white-space: pre-line;
+  word-break: break-word;
+  overflow-wrap: break-word;
+  margin-bottom: 10px;
+}
+
+.sendMessage h3 {
+  margin-top: 10px;
+  color: #3f754c;
+}
+
+.sendMessage h4 {
+  color: #608068;
+  text-align: center;
+}
+
+.memberLogin {
+  display: flex;
+  flex-direction: row-reverse;
+  margin-bottom: 30px;
+}
+
+.memberLogin .inputBtn {
+  margin-right: 10px;
+}
+
+.registerInfo {
+  margin: 20px 0;
+}
+
+.registerInfo input {
+  outline: none;
+  padding: 5px;
+  font-size: 16px;
+}
+
+.registerForm {
+  text-align: center;
+}
+
+.hide {
+  display: none;
+}
+
+.page-info {
+  text-align: center;
+  color: #3f754c;
+  margin-bottom: 20px;
+}
+
+.paginator {
+  display: flex;
+  justify-content: center;
+}
+
+.paginator a {
+  text-decoration: none;
+  color: #3f754c;
+  border: 1px solid #3f754c;
+  padding: 10px;
+}
+
+.messageList a,
+.userList a {
+  display: block;
+  text-decoration: none;
+  color: #fff;
+  background-color: #c78283;
+  padding: 4px 8px;
+  border-radius: 3px;
+  margin-right: 10px;
+}
+
+.tdBtn,
+.editContent {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.userTable {
+  margin: 0 auto;
+  border-spacing: 0;
+  width: 100%;
+}
+
+table th {
+  background-color: #3f754c;
+  color: #fff;
+}
+
+td {
+  padding: 5px;
+  text-align: center;
+}
+
+th {
+  padding: 10px;
+}
+
+table tr:nth-child(odd) {
+  background-color: #bcc8bc;
+}
+
+@media only screen and (min-width: 600px) {
+  body {
+    background-color: #608068;
+  }
+
+  .wrapper {
+    margin: 0 auto;
+  }
+
+  main > .wrapper {
+    border-radius: 10px;
+    box-shadow: 3px 3px 5px #29252577;
+    margin-top: 120px;
+    margin-bottom: 60px;
+  }
+
+  .input_item input {
+    background-color: #e9ede9;
+  }
+
+  .messageItem {
+    margin-top: 20px;
+  }
+
+  .horizonLine {
+    width: 90%;
+  }
+
+  td {
+    padding: 12px;
+  }
+}
